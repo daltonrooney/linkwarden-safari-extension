@@ -241,7 +241,11 @@ details summary[role=button]:not(.outline)::after {
 
 /* Custom styles */
 body {
-    padding: 1rem;
+    width: 25rem;
+    max-width: 25rem;
+    min-width: 25rem;
+    overflow-x: hidden;
+    padding: 0.75rem;
 }
 
 #message {
@@ -258,6 +262,9 @@ form * {
 }
 #save-form {
     transition: opacity 0.2s ease-in-out;
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
     &[aria-busy="true"] {
         * {
             opacity: 0.5;
