@@ -2,10 +2,71 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css">
     <script type="module" src="popup.js"></script>
+    <script src="slimselect.min.js"></script>
+    <link rel="stylesheet" href="slimselect.min.css" />
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="pico.fluid.classless.min.css">
+    <style>
+        body {
+            width: 400px;
+        }
+    </style>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <main>
+        <article id="message"></article>
+        <form id="save-form">
+            <fieldset>
+                <label>
+                    URL
+                    <input
+                        name="url"
+                        id="url"
+                        placeholder="https://"/>
+                    </label>
+                <label>
+                    Page Title
+                    <input
+                        name="title"
+                        id="title"
+                        placeholder=""
+                    />
+                </label>
+                <label>
+                    Description
+                    <textarea
+                        name="description"
+                        id="description"
+                        placeholder=""
+                    ></textarea>
+                </label>
+                <label>
+                    Tags
+                    <select 
+                        name="tags"
+                        id="tags"
+                        multiple
+                    >
+                    </select>
+                </label>
+                <label>
+                    Collection
+                    <select 
+                        name="collection"
+                        id="collection"
+                    >
+                        <option value="1">Unorganized</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <input
+                type="submit"
+                value="Save"
+                id="form-submit"
+            />
+        </form>
+    </main>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linkwarden for Safari Extension Settings</title>
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="pico.fluid.classless.min.css">
+  <style>
+    body {
+      padding: 1.5rem;
+      width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Linkwarden for Safari Extension Settings</h1>
+    <label for="apiEndpoint">Cloud instance address:</label>
+    <input type="text" id="apiEndpoint" placeholder="https://cloud.linkwarden.app">
+
+    <label for="authToken">Access Token (found in Settings -> Access Tokens):</label>
+    <input type="text" id="authToken" required placeholder="Enter auth token">
+
+    <button id="saveSettings">Save Settings</button>
+
+    <script src="settings.js"></script>
+  </main>
+</body>
+</html>
