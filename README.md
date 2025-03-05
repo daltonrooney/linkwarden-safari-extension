@@ -2,7 +2,7 @@
 
 ## Installation
 
-* Build using Xcode.
+* [Download the latest release](https://github.com/daltonrooney/linkwarden-safari-extension/releases) and build using Xcode.
 * Add your instance address and access token in the Settings panel.
 
 ![Settings Screenshot](./Docs/settings.png)
