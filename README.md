@@ -15,5 +15,6 @@
 ## Roadmap
 
 - [ ] Set a preferred default collection.
-- [ ] Option to import meta description from page.
+- [ ] Option to import default meta description from page.
+- [ ] Right-click on links to save to Linkwarden.
 - [ ] iOS action sheet.
